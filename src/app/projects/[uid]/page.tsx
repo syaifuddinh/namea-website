@@ -1,10 +1,15 @@
 import { DesktopView } from "@/components/atoms/responsive/DesktopView";
 import { MobileView } from "@/components/atoms/responsive/MobileView";
-import { DesktopProjectDetail } from "@/pages/project/detail/desktop";
-import { MobileProjectDetail } from "@/pages/project/detail/mobile";
+import { DesktopProjectDetail } from "@/components/pages/project/detail/desktop";
+import { MobileProjectDetail } from "@/components/pages/project/detail/mobile";
 import { getNextProject, getPrevProject, getProjectDetail } from "@/utils/project";
 
-export default function ProjectDetail({ params: { uid } }: { params: { uid: string; } }) {
+type Props = {
+  params: Promise<{ uid: string }>
+}
+
+export default async function ProjectDetail({ params }:  Props) {
+  const uid = (await params).uid
   const project = getProjectDetail(uid);
   const nextProjectUrl = getNextProject(uid);
   const prevProjectUrl = getPrevProject(uid);

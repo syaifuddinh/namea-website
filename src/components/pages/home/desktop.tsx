@@ -93,3 +93,5 @@ const MenuItem = ({
         </div>
     </Link>
 )
+
+export default DesktopHome;

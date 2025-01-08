@@ -96,3 +96,5 @@ const Portfolio = ({ className = "" }: { className: string; }) => (
     )) }
   </div>
 )
+
+export default DesktopProject;

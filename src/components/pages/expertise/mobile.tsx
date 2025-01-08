@@ -118,3 +118,5 @@ const ProsCard = ({
     </div>
   </div>
 )
+
+export default MobileExpertise;

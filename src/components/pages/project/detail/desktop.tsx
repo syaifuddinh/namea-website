@@ -125,3 +125,5 @@ const NavButton = ({
       { type === "next" && <ArrowRightIcon className={isDisabled ? "text-gray" : "text-primary"} /> }
   </Link>
 )
+
+export default DesktopProjectDetail;

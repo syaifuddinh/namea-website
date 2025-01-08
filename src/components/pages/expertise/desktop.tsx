@@ -136,3 +136,5 @@ const ProsCard = ({
     </div>
   </div>
 )
+
+export default DesktopExpertise;

@@ -83,3 +83,5 @@ const MenuItem = ({
       { children }
     </Link>
 )
+
+export default MobileHome

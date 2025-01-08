@@ -1,13 +1,13 @@
 import PLATFORM from "@/contents/platform.json"
 import { getProjectDetail } from "@/utils/project";
+import { Metadata } from "next";
 
-interface GenerateMetadataParams {
-  params: {
-    uid: string;
-  };
+type Props = {
+  params: Promise<{ uid: string }>
 }
 
-export async function generateMetadata({ params: { uid } }: GenerateMetadataParams) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const uid = (await params).uid
   const project = getProjectDetail(uid)
   
   return {

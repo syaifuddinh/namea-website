@@ -13,9 +13,12 @@ export const MobileProject = () => {
         <div className="bg-gray100 h-[40px] flex items-center justify-center font-medium text-sm">
           { HOME.about }
         </div>
-        <div className="bg-dark text-primary uppercase h-[40px] flex items-center justify-center font-medium text-sm">
+        <Link
+          href="/expertises"
+          className="bg-dark text-primary uppercase h-[40px] flex items-center justify-center font-medium text-sm"
+        >
           { MENU.expertise.title }
-        </div>
+        </Link>
 
 
         <div className="uppercase mt-5 text-lg flex items-center justify-center font-medium">
@@ -34,44 +37,9 @@ export const MobileProject = () => {
         </div>
 
         <Portfolio className="mt-6" />
-
-        <div className="w-full fixed bottom-0">
-          <div className="flex flex-col items-center">
-            
-            <MenuItem
-              url={MENU.projects.url}
-              className="bg-gray100"
-              style={{"width": "calc(100% - 32px)"}}
-            >
-              { MENU.projects.title }
-            </MenuItem>
-          </div>
-        </div>
     </div>
   );
 }
-
-
-const MenuItem = ({ 
-  className, 
-  style, 
-  children,
-  url
- }: { 
-  className: string; 
-  style: React.CSSProperties; 
-  children: React.ReactNode;
-  url: string;
-}) => (
-    <Link
-      className={`h-[40px] text-sm font-medium tracking-[0.05em] flex items-center justify-center uppercase ${className}`}
-      style={style}
-      href={url}
-    >
-      { children }
-    </Link>
-)
-
 
 const Portfolio = ({ className = "" }: { className: string; }) => (
   <div 

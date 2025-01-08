@@ -16,13 +16,13 @@ export const MobileProjectDetail = ({
   prevProjectUrl
 }: ProjectPageDTO) => {
   return (
-    <div className="w-full min-h-full bg-gray pb-12">
+    <div className="w-full min-h-[810px] bg-gray pb-12">
         <Navigation theme="light" />
-        <div className="bg-gray100 uppercase h-[40px] flex items-center justify-center font-medium text-sm">
+        <Link href="/projects" className="bg-gray100 uppercase h-[40px] flex items-center justify-center font-medium text-sm">
           { MENU.projects.title }
-        </div>
+        </Link>
 
-        <div className="absolute top-[13px] right-[97px] flex justify-end gap-4">
+        <div className="absolute top-[13px] right-[97px] flex justify-end gap-4 z-50">
           <NavButton 
             url={prevProjectUrl} 
             type="prev" 

@@ -50,7 +50,7 @@ export const DesktopHome = () => {
   );
 }
 
-const FooterHome = ({ className }: { className }) => (
+const FooterHome = ({ className }: { className?: string; }) => (
   <div className={`flex items-center ${className}`}>
     <MenuItem
       url={MENU.expertise.url}

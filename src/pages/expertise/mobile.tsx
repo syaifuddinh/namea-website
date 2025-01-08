@@ -88,7 +88,7 @@ const HighlightCard = ({
   className
 }: { 
   title: string; 
-  description: string;
+  description: string|React.ReactNode;
   className?: string;
 }) => (
   <div className={`text-white w-[70.12%] bg-black py-5 px-4 ${className}`}>

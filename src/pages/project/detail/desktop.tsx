@@ -99,7 +99,7 @@ export const DesktopProjectDetail = ({
   );
 }
 
-const FooterExpertise = ({ className }: { className }) => (
+const FooterExpertise = ({ className }: { className?: string; }) => (
   <div className={`flex items-center ${className}`}>    
     <Footer />
   </div>

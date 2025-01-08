@@ -9,11 +9,9 @@ import { ClosingIcon } from "../icons/ClosingIcon";
 import { Logo } from "../logo";
 
 export const Navigation = ({ 
-  className,
   theme = "light"
 }: { 
-  className: string 
-  theme: "light" | "dark";
+  theme?: "light" | "dark";
 }) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   

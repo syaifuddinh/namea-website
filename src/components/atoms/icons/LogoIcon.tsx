@@ -3,7 +3,7 @@ import * as React from "react";
 export const LogoIcon = ({ 
   className,
   color = "#212121"
-}: { className?: string }) => (
+}: { className?: string; color?: string; }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="104"

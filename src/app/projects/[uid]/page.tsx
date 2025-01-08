@@ -4,7 +4,7 @@ import { DesktopProjectDetail } from "@/pages/project/detail/desktop";
 import { MobileProjectDetail } from "@/pages/project/detail/mobile";
 import { getNextProject, getPrevProject, getProjectDetail } from "@/utils/project";
 
-export default function ProjectDetail({ params: { uid } }) {
+export default function ProjectDetail({ params: { uid } }: { params: { uid: string; } }) {
   const project = getProjectDetail(uid);
   const nextProjectUrl = getNextProject(uid);
   const prevProjectUrl = getPrevProject(uid);
@@ -13,11 +13,11 @@ export default function ProjectDetail({ params: { uid } }) {
     <>
       <DesktopView>
         <DesktopProjectDetail
-          title={project?.title}
-          description={project?.description}
-          thumbnail={project?.thumbnail}
-          year={project?.year}
-          category={project?.category}
+          title={String(project?.title)}
+          description={String(project?.description)}
+          thumbnail={String(project?.thumbnail)}
+          year={String(project?.year)}
+          category={String(project?.category)}
           nextProjectUrl={nextProjectUrl}
           prevProjectUrl={prevProjectUrl}
         />
@@ -25,11 +25,11 @@ export default function ProjectDetail({ params: { uid } }) {
 
       <MobileView>
         <MobileProjectDetail
-          title={project?.title}
-          description={project?.description}
-          thumbnail={project?.thumbnail}
-          year={project?.year}
-          category={project?.category}
+          title={String(project?.title)}
+          description={String(project?.description)}
+          thumbnail={String(project?.thumbnail)}
+          year={String(project?.year)}
+          category={String(project?.category)}
           nextProjectUrl={nextProjectUrl}
           prevProjectUrl={prevProjectUrl}
         />

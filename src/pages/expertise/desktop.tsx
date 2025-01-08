@@ -62,7 +62,7 @@ export const DesktopExpertise = () => {
   );
 }
 
-const FooterExpertise = ({ className }: { className }) => (
+const FooterExpertise = ({ className }: { className?: string; }) => (
   <div className={`flex items-center ${className}`}>    
     <MenuItem
       url={MENU.projects.url}
@@ -105,7 +105,7 @@ const HighlightCard = ({
   className
 }: { 
   title: string; 
-  description: string;
+  description: string|React.ReactNode;
   className?: string;
 }) => (
   <div className={`text-white max-w-[14.444vw] bg-black py-10 px-5 ${className}`}>

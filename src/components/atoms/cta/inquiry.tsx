@@ -3,7 +3,7 @@ import Link from "next/link"
 import { PlusIcon } from "../icons/PlusIcon"
 import { getWhatsappNumber } from "@/utils/platform"
 
-export const InquiryCTA = ({ className }: { className: string }) => (
+export const InquiryCTA = ({ className }: { className?: string }) => (
   <Link
     href={"https://wa.me/" + getWhatsappNumber() }
     className={`bg-dark text-white w-[258px] h-[52px] text-[20px] flex items-center justify-center font-normal ${className}`}

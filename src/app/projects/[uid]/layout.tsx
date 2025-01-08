@@ -1,8 +1,13 @@
 import PLATFORM from "@/contents/platform.json"
 import { getProjectDetail } from "@/utils/project";
 
+interface GenerateMetadataParams {
+  params: {
+    uid: string;
+  };
+}
 
-export async function generateMetadata({ params: { uid } }: { params: { uid: string; } }) {
+export async function generateMetadata({ params: { uid } }: GenerateMetadataParams) {
   const project = getProjectDetail(uid)
   
   return {

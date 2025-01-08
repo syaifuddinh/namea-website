@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { LogoIcon } from "@/components/atoms/icons/LogoIcon";
 import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
@@ -80,7 +79,7 @@ const MenuItem = ({
   url
 }: { 
   className: string; 
-  style: any; 
+  style: React.CSSProperties; 
   children: React.ReactNode;
   url: string;
  }) => (

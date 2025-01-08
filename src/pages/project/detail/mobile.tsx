@@ -1,11 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import MENU from "@/contents/menu.json"
-import HOME from "@/contents/home.json"
-import EXPERTISE from "@/contents/expertise.json"
 import { Navigation } from "@/components/atoms/navigation";
-import { Achievement } from "@/components/atoms/achievement";
-import PROJECT from "@/contents/project.json"
 import { ProjectPageDTO } from "@/types/project";
 import { ArrowLeftIcon } from "@/components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "@/components/atoms/icons/ArrowRightIcon";

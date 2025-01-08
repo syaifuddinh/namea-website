@@ -2,7 +2,6 @@
 
 import { createPortal } from "react-dom";
 import { DiamondIcon } from "../icons/DiamondIcon";
-import { LogoIcon } from "../icons/LogoIcon";
 import { Footer } from "../footer";
 import { useState, useEffect } from "react";
 import { ClosingIcon } from "../icons/ClosingIcon";

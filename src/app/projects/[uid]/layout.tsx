@@ -1,14 +1,19 @@
-import type { Metadata } from "next";
 import PLATFORM from "@/contents/platform.json"
+import { getProjectDetail } from "@/utils/project";
 
-export const metadata: Metadata = {
-  title: PLATFORM.companyName + " - Our Projects",
-  description: PLATFORM.description,
-  openGraph: {
-    title: PLATFORM.companyName + " - Our Projects",
-    description: PLATFORM.description
+
+export async function generateMetadata({ params: { uid } }: { params: { uid: string; } }) {
+  const project = getProjectDetail(uid)
+  
+  return {
+    title: PLATFORM.companyName + " - " + project?.title,
+    description: PLATFORM.description,
+    openGraph: {
+      title: PLATFORM.companyName + " - " + project?.title,
+      description: PLATFORM.description
+    }
   }
-};
+}
 
 export default function Layout({
   children,

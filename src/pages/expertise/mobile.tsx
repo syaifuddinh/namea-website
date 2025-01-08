@@ -69,7 +69,7 @@ const MenuItem = ({
   url
  }: { 
   className: string; 
-  style: any; 
+  style: React.CSSProperties; 
   children: React.ReactNode;
   url: string;
 }) => (

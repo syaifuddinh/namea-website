@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
-import EXPERTISE from "@/contents/expertise.json"
 import { Navigation } from "@/components/atoms/navigation";
 import { Achievement } from "@/components/atoms/achievement";
 import PROJECT from "@/contents/project.json"
@@ -60,7 +59,7 @@ const MenuItem = ({
   url
  }: { 
   className: string; 
-  style: any; 
+  style: React.CSSProperties; 
   children: React.ReactNode;
   url: string;
 }) => (

@@ -1,17 +1,17 @@
 import { DesktopView } from "@/components/atoms/responsive/DesktopView";
 import { MobileView } from "@/components/atoms/responsive/MobileView";
-import { DesktopHome } from "@/pages/home/desktop";
-import { MobileHome } from "@/pages/home/mobile";
+import { DesktopProject } from "@/pages/project/desktop";
+import { MobileProject } from "@/pages/project/mobile";
 
-export default function Home() {
+export default function Expertise() {
   return (
     <>
       <DesktopView>
-        <DesktopHome />
+        <DesktopProject />
       </DesktopView>
 
       <MobileView>
-        <MobileHome />
+        <MobileProject />
       </MobileView>
     </>
   )

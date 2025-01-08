@@ -1,0 +1,44 @@
+{
+    "achievement": {
+        "finance": {
+            "title": "Finance",
+            "qty": "02"
+        },
+        "entertainment": {
+            "title": "Gaming & Entertainment",
+            "qty": "30"
+        },
+        "media": {
+            "title": "Telecommunication & Media",
+            "qty": "03"
+        }
+    },
+    "works": [
+        {
+            "id": "project-1",
+            "title": "PROJECT 01",
+            "category": "WEBSITE APPLICATION",
+            "thumbnail": "/images/project/project-1.png",
+            "year": "2024",
+            "description": "We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients. We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients OS, and React Native, allowing us to provide the best solutions."
+        },
+        {
+            "id": "project-2",
+            "title": "PROJECT 02",
+            "category": "TRANSPORTATION MANAGEMENT SYSTEM",
+            "thumbnail": "/images/project/project-2.png",
+            "year": "2023",
+            "description": "We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients. We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients OS, and React Native, allowing us to provide the best solutions."
+        },
+        {
+            "id": "project-3",
+            "title": "PROJECT 03",
+            "category": "WAREHOUSE MANAGEMENT SYSTEM",
+            "thumbnail": "/images/project/project-2.png",
+            "year": "2022",
+            "description": "We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients. We offer mobile app development services that include planning, design, development, testing, and app launch. Our team is proficient in various technologies such as Android, iOS, and React Native, allowing us to provide the best solutions for our clients OS, and React Native, allowing us to provide the best solutions."
+        }
+
+
+    ]
+}

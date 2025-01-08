@@ -1,0 +1,36 @@
+{
+    "companyName": "Namea",
+    "description": "We are dedicated to helping your business grow and thrive by delivering world-class IT consulting services",
+    "socialPlatforms": [
+        {
+            "title": "instagram",
+            "url": "#"
+        },
+        {
+            "title": "linkedin",
+            "url": "#"
+        },
+        {
+            "title": "twitter",
+            "url": "#"
+        },
+        {
+            "title": "facebook",
+            "url": "#"
+        }
+    ],
+    "contacts": [
+        {
+            "id": "email",
+            "title": "email",
+            "slug": "mailto:",
+            "value": "info@namea.id"
+        },
+        {
+            "id": "whatsapp",
+            "title": "whatsapp",
+            "slug": "https://wa.me/",
+            "value": "0821000111222"
+        }
+    ]
+}

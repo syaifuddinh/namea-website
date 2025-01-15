@@ -11,7 +11,7 @@ export const DesktopProject = () => {
   return (
     <div className="fixed w-full h-full">
       <div className="relative bg-gray h-full relative">
-        <div className="absolute z-[100] pl-[8.333vw] pt-[38.5]">
+        <div className="absolute z-[100] pl-[8.333vw] pt-[38.5px]">
           <Logo />
         </div>
 

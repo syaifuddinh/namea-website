@@ -20,7 +20,7 @@ export const DesktopProjectDetail = ({
   return (
     <div className="w-full h-full bg-gray">
       <div className="relative h-full relative bg-gray">
-        <div className="absolute z-[100] pl-[8.333vw] pt-[38.5]">
+        <div className="absolute z-[100] pl-[8.333vw] pt-[38.5px]">
           <Logo />
         </div>
 
@@ -89,12 +89,11 @@ export const DesktopProjectDetail = ({
                 <div className="mt-5 flex gap-5 w-full overflow-x-auto scrollbar-hide">
                 { galleries.map(item => (
                   <div key={item}>
-                    <Image
+                    <img
                       key={item}
                       src={item}
                       alt="gallery"
                       className="w-auto min-h-[350px] max-h-[350px] object-cover"
-                      quality={100}
                     />
                   </div>
                 )) }

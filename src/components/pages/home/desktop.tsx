@@ -18,7 +18,7 @@ export const DesktopHome = () => {
           className="rotate-[120deg] absolute top-[6%] left-[12.5vw] max-[1440px]:max-w-[87.649vw] max-w-[72.649vw]"
         />
 
-        <div className="absolute pt-[38.5] pl-[8.333vw]">
+        <div className="absolute pt-[38.5px] pl-[8.333vw]">
           <Logo />
         </div>
         

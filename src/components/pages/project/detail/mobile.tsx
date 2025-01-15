@@ -63,6 +63,8 @@ export const MobileProjectDetail = ({
                     key={item}
                     src={item}
                     alt="gallery"
+                    width={200}
+                    height={100}
                     className="w-full h-auto"
                     quality={100}
                   />

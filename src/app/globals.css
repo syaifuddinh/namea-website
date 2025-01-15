@@ -39,3 +39,13 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+.scrollbar-hide {
+  overflow: -moz-scrollbars-none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  -webkit-overflow-scrolling: touch; /* WebKit */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* WebKit */
+}

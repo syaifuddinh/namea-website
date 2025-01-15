@@ -23,6 +23,7 @@ export default async function ProjectDetail({ params }:  Props) {
           thumbnail={String(project?.thumbnail)}
           year={String(project?.year)}
           category={String(project?.category)}
+          galleries={project?.gallery ? project?.gallery : []}
           nextProjectUrl={nextProjectUrl}
           prevProjectUrl={prevProjectUrl}
         />
@@ -34,6 +35,7 @@ export default async function ProjectDetail({ params }:  Props) {
           description={String(project?.description)}
           thumbnail={String(project?.thumbnail)}
           year={String(project?.year)}
+          galleries={project?.gallery ? project?.gallery : []}
           category={String(project?.category)}
           nextProjectUrl={nextProjectUrl}
           prevProjectUrl={prevProjectUrl}

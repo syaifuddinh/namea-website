@@ -13,19 +13,20 @@ export const DesktopProjectDetail = ({
   description,
   category,
   year,
+  galleries,
   nextProjectUrl,
   prevProjectUrl
 }: ProjectPageDTO) => {
   return (
-    <div className="fixed w-full h-full">
-      <div className="relative bg-gray h-full relative">
+    <div className="w-full h-full bg-gray">
+      <div className="relative h-full relative bg-gray">
         <div className="absolute z-[100] pl-[8.333vw] pt-[38.5]">
           <Logo />
         </div>
 
 
         <Link 
-          className="bg-gray100 z-10 absolute w-[50px] h-full flex items-center justify-center"
+          className="bg-gray100 z-10 fixed w-[50px] h-full flex items-center justify-center"
           href={"/projects"}
         >
           <div className="text-dark -rotate-[90deg] uppercase font-medium text-sm tracking-[0.05em] leading-[24.62px]">
@@ -34,7 +35,7 @@ export const DesktopProjectDetail = ({
         </Link>
 
         <div
-          className="absolute pl-[8.333vw] pt-[2.375vw]"
+          className="pl-[8.333vw] pt-[2.375vw]"
           style={{"width": "calc(100% - 10vw)"}}
         >
             <div className="flex justify-end gap-4">
@@ -57,6 +58,7 @@ export const DesktopProjectDetail = ({
                 alt="Project main banner"
                 width={550}
                 height={260}
+                className="max-h-[260px] w-auto"
               />
 
               <div>
@@ -79,15 +81,23 @@ export const DesktopProjectDetail = ({
               </div>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 pb-10 w-full">
                 <div className="font-medium">
                   WEBSITE
                 </div>
 
-                <div className="grid grid-cols-3 gap-5 mt-5">
-                  { [0, 1, 2].map(item => (
-                    <div key={item} className="bg-dark h-[235px]"></div>
-                  )) }
+                <div className="mt-5 flex gap-5 w-full overflow-x-auto scrollbar-hide">
+                { galleries.map(item => (
+                  <div key={item}>
+                    <Image
+                      key={item}
+                      src={item}
+                      alt="gallery"
+                      className="w-auto min-h-[350px] max-h-[350px] object-cover"
+                      quality={100}
+                    />
+                  </div>
+                )) }
                 </div>
             </div>
         </div>

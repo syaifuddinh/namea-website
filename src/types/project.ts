@@ -4,6 +4,7 @@ export interface ProjectPageDTO {
     description: string;
     category: string;
     year: string;
+    galleries: string[];
     nextProjectUrl: string;
     prevProjectUrl: string;
 }

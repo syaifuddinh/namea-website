@@ -12,6 +12,7 @@ export const MobileProjectDetail = ({
   description,
   category,
   year,
+  galleries,
   nextProjectUrl,
   prevProjectUrl
 }: ProjectPageDTO) => {
@@ -54,6 +55,20 @@ export const MobileProjectDetail = ({
             <div className="mt-4 text-[11px]">
               { description }
             </div>
+
+            <div className="mt-6 flex flex-col gap-5 w-full">
+              { galleries.map(item => (
+                <div key={item}>
+                  <Image
+                    key={item}
+                    src={item}
+                    alt="gallery"
+                    className="w-full h-auto"
+                    quality={100}
+                  />
+                </div>
+              )) }
+              </div>
         </div>
     </div>
   );

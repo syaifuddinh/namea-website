@@ -74,14 +74,14 @@ const Portfolio = ({ className = "" }: { className: string; }) => (
       <Link
         key={item.id} 
         href={"/projects/" + item.id}
-        className="min-w-[400px] max-w-[400px]"
+        className="min-w-[400px] max-w-[400px] overflow-hidden"
       >
         <Image
           src={item.thumbnail}
           alt={item.title + " thumbnail"}
           width={400}
           height={260}
-          className="min-h-[260px]"
+          className="min-h-[260px] max-h-[260px] w-auto"
         />
 
         <div className="flex items-center font-medium justify-between mt-5">

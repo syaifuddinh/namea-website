@@ -22,6 +22,8 @@ export const MobileExpertise = () => {
           width={225}
           height={300}
           className="mt-5"
+          loading="eager"
+          fetchPriority="high"
         />
 
         <HighlightCard

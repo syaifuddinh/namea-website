@@ -14,6 +14,8 @@ export const DesktopHome = () => {
           width={1262.15} 
           height={411.1} 
           alt="Splash image"
+          loading="eager"
+          fetchPriority="high"
           className="rotate-[120deg] absolute top-[6%] left-[12.5vw] max-[1440px]:max-w-[87.649vw] max-w-[72.649vw]"
         />
 

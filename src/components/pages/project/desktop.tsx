@@ -40,10 +40,12 @@ export const DesktopProject = () => {
         <div className="flex h-full items-center ml-[14.861vw]">
           <div className="relative flex items-center">
               <img 
-                src={"/images/project/main.png"}
+                src={"/images/project/main.webp"}
                 alt="Project main banner"
                 width={323}
                 height={431}
+                loading="eager"
+                fetchPriority="high"
               />
 
               <Achievement className="absolute right-0" />

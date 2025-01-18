@@ -26,11 +26,13 @@ export const MobileProject = () => {
 
         <div className="relative flex items-center">
           <img
-            src="/images/project/main.png"
+            src="/images/project/main.webp"
             alt="Expertise main image"
             width={225}
             height={300}
             className="mt-5"
+            loading="eager"
+            fetchPriority="high"
           />
           <Achievement className="absolute z-10 max-[376px]:right-0 min-[376px]:left-[13rem]" />
         </div>

@@ -32,6 +32,8 @@ export const MobileHome = () => {
           width={633.92} 
           height={206.48} 
           alt="Splash image"
+          loading="eager"
+          fetchPriority="high"
           className="rotate-[120deg] absolute z-1 top-[32vw] -left-[13vw] max-w-[633.92px]"
         />
 

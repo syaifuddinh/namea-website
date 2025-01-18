@@ -32,6 +32,8 @@ export const DesktopExpertise = () => {
             alt="Expertise main image"
             width={323}
             height={431}
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 

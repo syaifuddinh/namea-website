@@ -28,7 +28,7 @@ export const MobileHome = () => {
         </div>
 
         <img 
-          src="/images/home/splash.png" 
+          src="/images/home/splash.webp" 
           width={633.92} 
           height={206.48} 
           alt="Splash image"

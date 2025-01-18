@@ -17,7 +17,7 @@ export const MobileExpertise = () => {
         </div>
 
         <img
-          src="/images/expertise/main.png"
+          src="/images/expertise/main.webp"
           alt="Expertise main image"
           width={225}
           height={300}

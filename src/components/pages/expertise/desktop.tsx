@@ -28,7 +28,7 @@ export const DesktopExpertise = () => {
 
         <div className="absolute h-full flex items-center left-[11.319vw]">
           <img
-            src="/images/expertise/main.png"
+            src="/images/expertise/main.webp"
             alt="Expertise main image"
             width={323}
             height={431}

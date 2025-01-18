@@ -10,7 +10,7 @@ export const DesktopHome = () => {
     <div className="fixed w-full h-full">
       <div className="relative bg-gray pb-[4.444vw] h-full relative">
         <img 
-          src="/images/home/splash.png" 
+          src="/images/home/splash.webp" 
           width={1262.15} 
           height={411.1} 
           alt="Splash image"

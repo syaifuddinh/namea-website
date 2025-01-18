@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
 import { InquiryCTA } from "@/components/atoms/cta/inquiry";
@@ -28,7 +27,7 @@ export const MobileHome = () => {
           </div>
         </div>
 
-        <Image 
+        <img 
           src="/images/home/splash.png" 
           width={633.92} 
           height={206.48} 

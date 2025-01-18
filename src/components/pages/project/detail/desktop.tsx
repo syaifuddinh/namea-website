@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import { Footer } from "@/components/atoms/footer";
 import { Logo } from "@/components/atoms/logo";
@@ -53,12 +52,12 @@ export const DesktopProjectDetail = ({
             </div>
 
             <div className="flex gap-8 mt-7">
-              <Image 
+              <img 
                 src={thumbnail}
                 alt="Project main banner"
                 width={550}
                 height={260}
-                className="max-h-[260px] w-auto"
+                className="h-[260px] w-auto"
               />
 
               <div>

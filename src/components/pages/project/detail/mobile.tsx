@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import { Navigation } from "@/components/atoms/navigation";
 import { ProjectPageDTO } from "@/types/project";
@@ -39,7 +38,7 @@ export const MobileProjectDetail = ({
         
 
         <div className="px-4 pt-5">
-            <Image
+            <img
               src={thumbnail}
               alt={title + " thumbnail"}
               width={400}
@@ -59,14 +58,13 @@ export const MobileProjectDetail = ({
             <div className="mt-6 flex flex-col gap-5 w-full">
               { galleries.map(item => (
                 <div key={item}>
-                  <Image
+                  <img
                     key={item}
                     src={item}
                     alt="gallery"
                     width={200}
                     height={100}
                     className="w-full h-auto"
-                    quality={100}
                   />
                 </div>
               )) }

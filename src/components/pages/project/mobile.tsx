@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
 import { Navigation } from "@/components/atoms/navigation";
@@ -26,7 +25,7 @@ export const MobileProject = () => {
         </div>
 
         <div className="relative flex items-center">
-          <Image
+          <img
             src="/images/project/main.png"
             alt="Expertise main image"
             width={225}
@@ -50,7 +49,7 @@ const Portfolio = ({ className = "" }: { className: string; }) => (
         key={item.id} 
         href={"/projects/" + item.id}
       >
-        <Image
+        <img
           src={item.thumbnail}
           alt={item.title + " thumbnail"}
           width={400}

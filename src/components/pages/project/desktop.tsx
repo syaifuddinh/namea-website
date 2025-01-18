@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
 import PROJECT from "@/contents/project.json"
@@ -40,7 +39,7 @@ export const DesktopProject = () => {
 
         <div className="flex h-full items-center ml-[14.861vw]">
           <div className="relative flex items-center">
-              <Image 
+              <img 
                 src={"/images/project/main.png"}
                 alt="Project main banner"
                 width={323}
@@ -76,7 +75,7 @@ const Portfolio = ({ className = "" }: { className: string; }) => (
         href={"/projects/" + item.id}
         className="min-w-[400px] max-w-[400px] overflow-hidden"
       >
-        <Image
+        <img
           src={item.thumbnail}
           alt={item.title + " thumbnail"}
           width={400}

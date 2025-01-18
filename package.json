@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "review": "tsc --noEmit"
+
   },
   "dependencies": {
     "react": "^19.0.0",

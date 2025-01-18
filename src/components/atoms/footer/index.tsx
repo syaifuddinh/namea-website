@@ -26,20 +26,9 @@ export const Footer = ({
           </Link>
         )) }
       </div>
-      
-      <div className="flex flex-col gap-1 capitalize text-right mt-9">
-        { PLATFORM.socialPlatforms.map(item => (
-          <Link
-            key={item.title}
-            href={item.url}
-          >
-            { item.title }
-          </Link>
-        )) }
-      </div>
-
+     
       <div className="mt-9">
-        { PLATFORM.companyName } ⓒ 2025
+        { PLATFORM.companyName } ⓒ { (new Date().getFullYear()) }
       </div>
     </div>
 )

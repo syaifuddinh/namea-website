@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
 import EXPERTISE from "@/contents/expertise.json"
@@ -17,7 +16,7 @@ export const MobileExpertise = () => {
           { MENU.expertise.title }
         </div>
 
-        <Image
+        <img
           src="/images/expertise/main.png"
           alt="Expertise main image"
           width={225}

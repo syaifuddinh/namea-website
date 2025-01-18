@@ -24,13 +24,7 @@
             "id": "email",
             "title": "email",
             "slug": "mailto:",
-            "value": "info@namea.id"
-        },
-        {
-            "id": "whatsapp",
-            "title": "whatsapp",
-            "slug": "https://wa.me/",
-            "value": "0821000111222"
+            "value": "business@nameatech.com"
         }
     ]
 }

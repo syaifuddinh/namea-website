@@ -7,3 +7,12 @@ export const getWhatsappNumber = () => {
 
     return wa?.value;
 }
+
+
+export const getEmail = () => {
+    const key = "email"
+    const email = PLATFORM.contacts.find(item => item.id === key)
+    if(!email) return;
+
+    return email?.value;
+}

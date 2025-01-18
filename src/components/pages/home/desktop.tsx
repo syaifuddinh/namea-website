@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MENU from "@/contents/menu.json"
 import HOME from "@/contents/home.json"
 import { InquiryCTA } from "@/components/atoms/cta/inquiry";
@@ -10,7 +9,7 @@ export const DesktopHome = () => {
   return (
     <div className="fixed w-full h-full">
       <div className="relative bg-gray pb-[4.444vw] h-full relative">
-        <Image 
+        <img 
           src="/images/home/splash.png" 
           width={1262.15} 
           height={411.1} 

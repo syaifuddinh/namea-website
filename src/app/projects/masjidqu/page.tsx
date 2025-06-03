@@ -1,7 +1,8 @@
 import { ProjectDetailPage } from "@/components/molecules/projectDetail";
 
 export default async function ProjectDetail() {
-  const key = "cheers";
+  const key = "masjidqu";
+  // const key = "sidebeep"
 
   return <ProjectDetailPage uid={key} />;
 }

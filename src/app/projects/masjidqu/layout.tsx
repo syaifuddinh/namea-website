@@ -3,7 +3,7 @@ import { getProjectDetail } from "@/utils/project";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const uid = "sidebeep";
+  const uid = "masjidqu";
   const project = getProjectDetail(uid);
 
   return {
